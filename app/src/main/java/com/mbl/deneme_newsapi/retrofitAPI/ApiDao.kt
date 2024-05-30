@@ -15,7 +15,7 @@ interface ApiDao {
         @Query("category")category : String = "general",
         @Query("pageSize")pageSize : Int = 100,
         @Query("apiKey")apiKey : String = Constants.API_KEY
-    ) : NewsRESPONSE
+    ) :  NewsRESPONSE
 
     @GET("v2/everything")  //for SEARCH
     suspend fun searchForNews(
