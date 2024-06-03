@@ -18,9 +18,7 @@ import javax.inject.Inject
 @HiltViewModel
 class NewViewModel @Inject constructor(private val newsRepository: NewsRepository) : ViewModel() {
     var headLines = MutableLiveData<List<Article>>()
-
     var searchList = MutableLiveData<List<Article>>()
-
     var favourArticles = MutableLiveData<List<ArticleForNavigation>>()
 
     private val _error = MutableLiveData<String?>()
@@ -34,7 +32,7 @@ class NewViewModel @Inject constructor(private val newsRepository: NewsRepositor
         }
     }
 
-    fun searchNews(searchQuery:String) = viewModelScope.launch(Dispatchers.Main){
+    fun searchNews(searchQuery:String) = viewModelScope.launch(Dispatchers.IO){
         try {
             searchList.postValue(newsRepository.searchNews(searchQuery))
         } catch (e : Exception) {
@@ -56,18 +54,11 @@ class NewViewModel @Inject constructor(private val newsRepository: NewsRepositor
     }
 
     fun deleteArticle(articleID : Int) {
-        viewModelScope.launch (Dispatchers.Main) {
+        viewModelScope.launch (Dispatchers.IO) {
             newsRepository.deleteArticle(articleID)
             getfavourArticles()
         }
     }
-
-
-
-
-
-
-
-
+    
 }
 
