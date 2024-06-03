@@ -7,7 +7,7 @@ class ApiUtils {
 
     companion object {
 
-        val BASE_URL = Constants.BASE_URL
+        val BASE_URL =" https://newsapi.org/"
 
         fun getDao(): ApiDao {
             return RetrofitClient.getClient(BASE_URL).create(ApiDao::class.java)
