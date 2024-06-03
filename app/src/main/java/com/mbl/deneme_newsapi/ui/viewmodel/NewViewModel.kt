@@ -6,8 +6,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mbl.deneme_newsapi.data.model.Article
 import com.mbl.deneme_newsapi.data.model.ArticleForNavigation
-import com.mbl.deneme_newsapi.data.model.NewsRESPONSE
-import com.mbl.deneme_newsapi.data.model.Source
 import com.mbl.deneme_newsapi.data.repository.NewsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
@@ -59,6 +57,6 @@ class NewViewModel @Inject constructor(private val newsRepository: NewsRepositor
             getfavourArticles()
         }
     }
-    
+
 }
 
