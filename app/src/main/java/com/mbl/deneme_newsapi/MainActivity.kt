@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.NavHostFragment1) as NavHostFragment
         val navController = navHostFragment.navController
 
-        binding.bottomNavigation1.setOnNavigationItemSelectedListener { menuItem ->
+        binding.bottomNavigation1.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.headlinesFragment -> {
                     navController.navigate(R.id.headlinesFragment)
