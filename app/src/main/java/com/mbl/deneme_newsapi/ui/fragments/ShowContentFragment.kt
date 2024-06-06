@@ -23,6 +23,8 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class ShowContentFragment : Fragment() {
+
+
     private lateinit var binding: FragmentShowContentBinding
     private lateinit var viewModel: NewViewModel
 
@@ -55,13 +57,6 @@ class ShowContentFragment : Fragment() {
             } catch (e : Exception) {
                 Toast.makeText(requireContext(),"Failed Code: ${e.message}",Toast.LENGTH_SHORT).show()
             }
-
-
-
-
-
-
-
 
             binding.floatingActionButton.setOnClickListener {
                 article?.let { it1 -> viewModel.addArticle(it1) }

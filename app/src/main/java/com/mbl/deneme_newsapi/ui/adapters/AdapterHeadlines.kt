@@ -86,11 +86,7 @@ class AdapterHeadlines(var mContext: Context, var viewModel: NewViewModel)
                 articleUrloImage = articleUrloImage ?: "null"
             )
 
-            val direction =
-                HeadlinesFragmentDirections.actionHeadlinesFragmentToShowContentFragment(
-                    navigationArticle,
-                    null
-                )
+            val direction = HeadlinesFragmentDirections.actionHeadlinesFragmentToShowContentFragment(navigationArticle, null)
             Navigation.findNavController(it).navigate(direction)
             //it.findNavController().navigate(direction)
 
