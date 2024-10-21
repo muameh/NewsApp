@@ -1,8 +1,61 @@
+<<<<<<< HEAD
+# NewsApp
+
+This is a comprehensive news application developed using **Kotlin** and **Android Studio**. The app allows users to view news headlines, search for articles, and manage their favorite articles. It utilizes modern best practices in Android development, including the **MVVM architecture**, **Room Database** for local data storage, **Retrofit** for API interactions, and **Dagger Hilt** for dependency injection.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technical Stack](#technical-stack)
+- [Architecture](#architecture)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+
+## Features
+
+- **View Headlines**: Users can fetch and display news headlines categorized by country and topic (e.g., business, entertainment, sports).
+- **Search Functionality**: Allows users to search for news articles by entering keywords.
+- **Favorites Management**: Users can save articles to a favorites list for later viewing.
+- **Offline Storage**: Articles marked as favorites are cached locally using Room Database, ensuring access even without an internet connection.
+- **Error Handling**: The app gracefully handles errors and provides feedback to users.
+
+## Technical Stack
+
+- **Kotlin**: The primary programming language for Android development.
+- **Android Studio**: The IDE used for building and maintaining the application.
+- **XML Layouts**: Traditional XML layouts are used to create the user interface components.
+- **Retrofit**: A type-safe HTTP client for Android to handle network requests to the news API.
+- **Room**: A persistence library that simplifies database management with an SQLite backend.
+- **Dagger Hilt**: A dependency injection framework that helps in managing dependencies efficiently.
+- **RecyclerView**: For displaying tasks.
+- **LiveData**: For observing and updating the UI.
+- **Coroutines**: For asynchronous operations.
+
+## Architecture
+
+The application follows the **MVVM (Model-View-ViewModel)** architecture, which promotes separation of concerns, making the codebase more manageable and testable.
+
+### Components
+
+- **Model**: Represents the data layer of the application, including network requests and database operations.
+- **View**: Composed of XML layouts that render the user interface.
+- **ViewModel**: Acts as a bridge between the View and the Model. It holds UI-related data and handles user interactions.
+
+### Steps to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/muameh/NewsApp.git
+   
+======
+![screenShots1](images/Screenshot_1729492624.png)
+![screenShots2](images/Screenshot_1729492658.png)
+![screenShots3](images/Screenshot_1729492716.png)
+![screenShots4](images/Screenshot_1729492651.png)
+![screenShots5](images/Screenshot_1729492627.png)
+![screenShots6](images/Screenshot_1729492707.png)
+![screenShots7](images/Screenshot_1729492750.png)
+![screenShots8](images/Screenshot_1729493509.png)
 
 
-![Screenshot_1717067743](https://github.com/muameh/newsApi/assets/168066543/1a171fa0-2eae-4361-8c0f-3477ecb9b5cb)
-![Screenshot_1717067800](https://github.com/muameh/newsApi/assets/168066543/16bda7c3-68a8-43c7-b655-c36935dae521)
-![Screenshot_1717067848](https://github.com/muameh/newsApi/assets/168066543/c3e86779-b05f-44af-9fdc-4fe5c8d520c4)
-![Screenshot_1717067887](https://github.com/muameh/newsApi/assets/168066543/f8b0fa11-338a-4a96-ba94-baa1c01e5415)
-![Screenshot_1717067917](https://github.com/muameh/newsApi/assets/168066543/88debaa6-b5c6-4377-848f-b424304ebed2)
-![Screenshot_1717067945](https://github.com/muameh/newsApi/assets/168066543/23fcb3b5-a9b1-4ce7-b50d-9c827c88c851)
+
+
